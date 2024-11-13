@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language to go</title>
+    <link rel="shortcut icon" href="img/лого.svg" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/gilroy-regular.ttf");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/gilroy-medium.ttf");
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/gilroy-bold.ttf");
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/gilroy-semibold.ttf");
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/gilroy-thin.ttf");
+        font-weight: 100;
+        font-style: normal;
+      }
+      body{
+        font-family: "Gilroy";
+      }
+    </style>
+</head>
+<body>
+  <!-- меню -->
+  <div class="container container-nav" style="margin-bottom: 100px;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <a class="navbar-brand active" href="index.html">
+          <img src="img/L2Go logo 1.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas d-flex" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <ul class="navbar-nav mb-2 mb-lg-0 fs-6" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Курсы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="blog.html">Блог</a>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Еще
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="contact.html">Контакты</a></li>
+              <li><a class="dropdown-item" href="#">Условия оплаты</a></li>
+            </ul>
+          </li>
+          <button class="btn btn-outline-success" type="submit" style="width: 82px;"><a href="entrance.html" style="text-decoration: none; color: #fff;">Войти</a></button>
+        </ul>
+      </div> 
+    </nav>  
+  </div>
+  <!-- модальное -->
+  <div class="container" style="margin-bottom: 100px;">
+    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis d-flex osn">
+      <div class="col-lg-6 px-0 modal-title">
+        <p class="lead fw-semibold" style="color: #2E90D1; font-size: 18px;">Language to go</p>
+        <h1 class="display-4" style="font-family: Gilroy-ExtraBold; margin-bottom: 20px;">Онлайн-школа иностранных языков</h1>
+        <p class="lead fs-5 fw-medium" style="color: #828282; width: 80%; margin-bottom: 56px;">Достигайте своих целей с помощью авторских игровых методик от носителей языка</p>
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 268px; height: 60px; font-size: 18px;">Попробовать бесплатно</button>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <form action="">
+              <div class="modal-body  d-flex">
+              <div class="text d-flex">
+                <h1 class="display-4 owlCarousel-h2" style="font-family: Gilroy-ExtraBold; margin-bottom: 40px; font-size: 46px; width: 60%;">Регистрируйтесь и приступайте к первому бесплатному уроку</h1>
+                <label class="label-modal" style="width: 50%;">Телефон *</label>
+                <div class="tel d-flex" style="gap: 20px; margin-bottom: 25px; width: 57%;">
+                  <input class="number-modal" type="tel" required>
+                  <button type="submit" class="btn btn-outline-success btn-modal" style="height: 48px; margin: 0;">Начать обучение</button>
+                </div>
+                <div class="form-check" style="width: 58%;">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                  <label class="form-check-label" for="flexCheckDefault" style="color: #828282;">
+                    Отправляя заявку, я соглашаюсь с <span style="text-decoration: underline; color: #2E90D1;">политикой конфиденциальности</span> и <span style="text-decoration: underline; color: #2E90D1;">пользовательским соглашением</span>
+                  </label>
+                </div>
+                </div>
+                <img src="img/modal.png" alt="" style="width: 20%; height: 20%;" class="img-modal">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <img src="img/one_bloc.png" alt="" style="width: 50%; height: 50%;" class="img-osn">
+    </div>
+  </div>
+  <!-- карусель -->
+  <div class="container" style="margin-bottom: 100px;">
+    <div class="d-flex owlCarousel-title" style="justify-content: space-between; align-items: center; margin-bottom: 60px;">
+      <h2 class="fw-bold owlCarousel-h2" style="padding-left: 48px; width: 40%;">Курсы иностранных языков для любого уровня</h2>
+      <a class="vse-curs" href="#">Все курсы</a>
+    </div>
+    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+      <div class="item" style="background-color: #DEF1FF;">
+        <img src="img/german.svg" alt="german" style="width: 10%; margin-bottom: 20px;" class="contry">
+        <p class="name" style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Немецкий для начального уровня</p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 0;">Длительность: <span style="font-weight: 700;">45 часов</span></p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 20px">Модулей: <span style="font-weight: 700;">3</span></p>
+        <div class="price d-flex" style="justify-content: space-between; align-items: center;">
+          <a href="#" class="fw-semibold podrob" style="text-decoration: none; color: #8E49A0; margin-bottom: 0;">Узнать подробнее</a>
+          <p class="price-text fw-bold" style="font-size: 20px; margin-bottom: 0;">От 6 520 Р</p>
+        </div>
+      </div>
+      <div class="item" style="background-color: #FDEDE4;">
+        <img src="img/china.svg" alt="china" style="width: 10%; margin-bottom: 20px;" class="contry">
+        <p class="name" style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Китайский для среднего уровня</p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 0;">Длительность: <span style="font-weight: 700;">45 часов</span></p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 20px">Модулей: <span style="font-weight: 700;">3</span></p>
+        <div class="price d-flex" style="justify-content: space-between; align-items: center;">
+          <a href="#" class="fw-semibold podrob" style="text-decoration: none; color: #8E49A0; margin-bottom: 0;">Узнать подробнее</a>
+          <p class="price-text fw-bold" style="font-size: 20px; margin-bottom: 0;">От 6 520 Р</p>
+        </div>
+      </div>
+      <div class="item" style="background-color: #EFEFFF;">
+        <img src="img/spain.svg" alt="spain" style="width: 10%; margin-bottom: 20px;" class="contry">
+        <p class="name" style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Испанский для среднего уровня</p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 0;">Длительность: <span style="font-weight: 700;">45 часов</span></p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 20px">Модулей: <span style="font-weight: 700;">3</span></p>
+        <div class="price d-flex" style="justify-content: space-between; align-items: center;">
+          <a href="#" class="fw-semibold podrob" style="text-decoration: none; color: #8E49A0; margin-bottom: 0;">Узнать подробнее</a>
+          <p class="price-text fw-bold" style="font-size: 20px; margin-bottom: 0;">От 6 520 Р</p>
+        </div>
+      </div>
+      <div class="item" style="background-color: #DEF1FF;">
+        <img src="img/german.svg" alt="german" style="width: 10%; margin-bottom: 20px;" class="contry">
+        <p class="name" style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Немецкий для начального уровня</p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 0;">Длительность: <span style="font-weight: 700;">45 часов</span></p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 20px">Модулей: <span style="font-weight: 700;">3</span></p>
+        <div class="price d-flex" style="justify-content: space-between; align-items: center;">
+          <a href="#" class="fw-semibold podrob" style="text-decoration: none; color: #8E49A0; margin-bottom: 0;">Узнать подробнее</a>
+          <p class="price-text fw-bold" style="font-size: 20px; margin-bottom: 0;">От 6 520 Р</p>
+        </div>
+      </div>
+      <div class="item" style="background-color: #FDEDE4;">
+        <img src="img/china.svg" alt="china" style="width: 10%; margin-bottom: 20px;" class="contry">
+        <p class="name" style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Китайский для среднего уровня</p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 0;">Длительность: <span style="font-weight: 700;">45 часов</span></p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 20px">Модулей: <span style="font-weight: 700;">3</span></p>
+        <div class="price d-flex" style="justify-content: space-between; align-items: center;">
+          <a href="#" class="fw-semibold podrob" style="text-decoration: none; color: #8E49A0; margin-bottom: 0;">Узнать подробнее</a>
+          <p class="price-text fw-bold" style="font-size: 20px; margin-bottom: 0;">От 6 520 Р</p>
+        </div>
+      </div>
+      <div class="item" style="background-color: #EFEFFF;">
+        <img src="img/spain.svg" alt="spain" style="width: 10%; margin-bottom: 20px;" class="contry">
+        <p class="name" style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Испанский для среднего уровня</p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 0;">Длительность: <span style="font-weight: 700;">45 часов</span></p>
+        <p class="dlin" style="font-size: 16px; font-weight: 400; margin-bottom: 20px">Модулей: <span style="font-weight: 700;">3</span></p>
+        <div class="price d-flex" style="justify-content: space-between; align-items: center;">
+          <a href="#" class="fw-semibold podrob" style="text-decoration: none; color: #8E49A0; margin-bottom: 0;">Узнать подробнее</a>
+          <p class="price-text fw-bold" style="font-size: 20px; margin-bottom: 0;">От 6 520 Р</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Кому подойдет L2GO -->
+  <div class="container" style="margin-bottom: 100px;">
+    <div class="d-flex for">
+      <div class="text-one" style="padding-left: 48px;">
+        <h2 class="fw-bold owlCarousel-h2" style="margin-bottom: 27px;">Кому подойдет <span style="color: #2E90D1;">L2GO</span></h2>
+        <p class="fw-medium two-title" style=" margin-bottom: 40px; width: 65%;"><span style="color: #2E90D1;">Language to go</span> подойдет всем, кто хочет за короткий срок качественно изменить свою жизнь, освоив иностранный язык.</p>
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 268px; height: 60px; font-size: 18px;">Попробовать бесплатно</button>
+      </div>
+      <div class="container">
+        <div class="row for-main" style="margin-bottom: 40px;">
+          <div class="col for-item">
+            <img src="img/presentation.png" alt="" style=" margin-bottom: 16px;">
+            <h4 class="fw-bold for-main-title">Школьникам</h4>
+            <p class="for-main-op" style="width: 95%;">Сдать выпускные экзамены или поступить в ВУЗ</p>
+          </div>
+          <div class="col for-item">
+            <img src="img/graduation-cap.png" alt="" style=" margin-bottom: 16px;">
+            <h4 class="fw-bold for-main-title">Студентам</h4>
+            <p class="for-main-op">Переехать на обучение в другую страну или найти высокооплачеваемую работу</p>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 40px;">
+          <div class="col for-item">
+            <img src="img/map-marker.png" alt="" style=" margin-bottom: 16px;">
+            <h4 class="fw-bold for-main-title">Эмигрантам</h4>
+            <p class="for-main-op" style="width: 95%;">Адаптироваться в новой стране, создать конкурентное преимущество и трудоустроиться</p>
+          </div>
+          <div class="col for-item">
+            <img src="img/comment-alt-message 1.png" alt="" style=" margin-bottom: 16px;">
+            <h4 class="fw-bold for-main-title">Общительным</h4>
+            <p class="for-main-op">Создать счастливую семью с иностранцем и интегрироваться в новое общество</p>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 40px;">
+          <div class="col for-item">
+            <img src="img/briefcase 1.png" alt="" style=" margin-bottom: 16px;">
+            <h4 class="fw-bold for-main-title">Бизнесменам</h4>
+            <p class="for-main-op" style="width: 95%;">Завести полезные знакомства среди иностранцев и масштабировать бизнес</p>
+          </div>
+          <div class="col for-item">
+            <img src="img/ship 1.png" alt="" style=" margin-bottom: 16px;">
+            <h4 class="fw-bold for-main-title">Путешественникам</h4>
+            <p class="for-main-op">Свободно общаться и находить новых друзей, решать бытовые вопросы и спорные ситуации</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Почему вы быстро освоите язык -->
+  <div class="container" style="margin-bottom: 100px;">
+    <h2 class="text-center fw-bold" style="margin-bottom: 60px;">Почему вы быстро освоите язык</h2>
+    <div class="container text-center">
+      <div class="row why-main" style="align-items: center; margin-bottom: 60px;">
+        <div class="col" style="text-align: left;">
+          <p class="number">01</p>
+          <h3 class="fw-bold" style="margin-bottom: 19px;" >Интересные уроки</h3>
+          <p style="color: #4F4F4F;">Короткие, но насыщенные уроки до 45 минут.</p>
+          <p style="color: #4F4F4F;">Более глубокий объем знаний, чем в других школах и даже чем предусмотрено международными стандартами.</p>
+        </div>
+        <div class="col">
+          <img src="img/casual-life-3d-girl-and-boy-sitting-with-tablet-1 1.png" alt="" class="img-glav">
+        </div>
+      </div>
+      <div class="row why-main-two" style="align-items: center; margin-bottom: 60px;">
+        <div class="col">
+          <img src="img/chat.png" alt="" class="img-glav">
+        </div>
+        <div class="col" style="text-align: left;">
+          <p class="number" style="background-color: #8E49A0;">02</p>
+          <h3 class="fw-bold" style="margin-bottom: 19px;">Общение с другими учащимися</h3>
+          <p style="color: #4F4F4F;">Внутренний видеочат для общения с единомышленниками и отработки материала. Завести новых друзей по интересам просто.</p>
+        </div>
+      </div>
+      <div class="row why-main" style="align-items: center; margin-bottom: 60px;">
+        <div class="col" style="text-align: left;">
+          <p class="number" style="background-color: #E42125;">03</p>
+          <h3 class="fw-bold" style="margin-bottom: 19px;">Удобный формат обучения</h3>
+          <p style="color: #4F4F4F;">Полностью автоматический процесс обучения на одной платформе с доступом на любом устройстве.</p>
+        </div>
+        <div class="col">
+          <img src="img/format.png" alt="" class="img-glav">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Полезные новости и статьи -->
+  <div class="container" style="margin-bottom: 100px;">
+    <div class="d-flex news" style="justify-content: space-between; align-items: center; margin-bottom: 60px;">
+      <h2 class="fw-bold owlCarousel-h2" style="margin-bottom: 27px;">Полезные новости и статьи</h2>
+      <a class="vse-curs" href="blog.html">Все новости</a>
+    </div>
+    <div class="container">
+      <div class="row" style="justify-content: space-between;">
+        <div class="card" style="width: 33%;">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold" style="margin-bottom: 10px;">Новая система скидок в Language2GO: успейте забрать максимум!</h5>
+            <h6 class="card-subtitle" style="color: #2E90D1; margin-bottom: 10px">05-06-2022</h6>
+            <p class="card-text" style="font-size: 16px; color: #585858; margin-bottom: 24px">Для многих стоимость изучения иностранного языка является важным критерием при выборе системы обучения.</p>
+            <div class="d-flex" style="justify-content: space-between; align-items: center;">
+              <p class="tag">Новость</p>
+              <a href="#" class="card-link">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 33%;">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold" style="margin-bottom: 10px;">“Интерактивная платформа: как это работает?” Отвечает основатель проекта...</h5>
+            <h6 class="card-subtitle" style="color: #2E90D1; margin-bottom: 10px">05-06-2022</h6>
+            <p class="card-text" style="font-size: 16px; color: #585858; margin-bottom: 24px">Моя команда — профессиональные филологи и педагоги-носители языка, преподаватели зарубежных университетов, которые ...</p>
+            <div class="d-flex" style="justify-content: space-between; align-items: center;">
+              <p class="tag">Новость</p>
+              <a href="#" class="card-link">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 33%;">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold" style="margin-bottom: 10px;">Новое слово в изучении иностранных языков: интерактивная платформа ...</h5>
+            <h6 class="card-subtitle" style="color: #2E90D1; margin-bottom: 10px">05-06-2022</h6>
+            <p class="card-text" style="font-size: 16px; color: #585858; margin-bottom: 24px">Для многих стоимость изучения иностранного языка является важным критерием при выборе системы обучения.</p>
+            <div class="d-flex" style="justify-content: space-between; align-items: center;">
+              <p class="tag">Новость</p>
+              <a href="#" class="card-link">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Отвечаем на частые вопросы -->
+  <div class="container d-flex answer" style="margin-bottom: 100px;">
+    <div class="d-flex" style="flex-direction: column;">
+      <h2 class="fw-bold owlCarousel-h2" style="margin-bottom: 27px;">Отвечаем на частые вопросы</h2>
+      <img src="img/answer.png" alt="" class="img-accard">
+    </div>
+    <div class="accordion" id="accordionPanelsStayOpenExample" style="width: 100%;">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Как проходит обучение на онлайн-курсах?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Обучение проходит в формате видео-лекций на нашей интерактивной платформе. После приобретения курса, вы сразу же получаете письмо на почту с доступом в личный кабинет, в котором уже открыты все уроки приобретенного курса. Каждый урок состоит из видео-лекции по теме и нескольких десятков интерактивных заданий на отработку материала.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Я покупаю пакет уроков или онлайн-курс, сколько он действует?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Обучение проходит в формате видео-лекций на нашей интерактивной платформе. После приобретения курса, вы сразу же получаете письмо на почту с доступом в личный кабинет, в котором уже открыты все уроки приобретенного курса. Каждый урок состоит из видео-лекции по теме и нескольких десятков интерактивных заданий на отработку материала.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Как быстро я достигну результатов?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Обучение проходит в формате видео-лекций на нашей интерактивной платформе. После приобретения курса, вы сразу же получаете письмо на почту с доступом в личный кабинет, в котором уже открыты все уроки приобретенного курса. Каждый урок состоит из видео-лекции по теме и нескольких десятков интерактивных заданий на отработку материала.         
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            Когда я могу начать обучение?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Обучение проходит в формате видео-лекций на нашей интерактивной платформе. После приобретения курса, вы сразу же получаете письмо на почту с доступом в личный кабинет, в котором уже открыты все уроки приобретенного курса. Каждый урок состоит из видео-лекции по теме и нескольких десятков интерактивных заданий на отработку материала.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            Как проходит обучение на индивидуальных занятиях?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Обучение проходит в формате видео-лекций на нашей интерактивной платформе. После приобретения курса, вы сразу же получаете письмо на почту с доступом в личный кабинет, в котором уже открыты все уроки приобретенного курса. Каждый урок состоит из видео-лекции по теме и нескольких десятков интерактивных заданий на отработку материала.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- футер -->
+  <div class="fon" style="background-color: #641F76;">
+    <div class="container footer" style="padding-top: 77px; color: #fff; padding-bottom: 100px;">
+      <footer class="row">
+        <div class="col mb-3">
+          <img src="img/L2Go logo 1.svg" alt="" style="margin-bottom: 30px;">
+          <p class="text-body" style="color: #fff !important; font-size: 14px;">Language2Go — интерактивная платформа для легкого, удобного и быстрого изучения иностранных языков.</p>
+        </div>
+        <div class="col mb-3">
+          <h5>Обучение</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Все языки</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Взрослым</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Детям и подросткам</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Мини-курсы</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Тренажеры</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Индивидуальные занятия</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Информация</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">О нас</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Отзывы</a></li>
+            <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Новости</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Частые вопросы</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Условия оплаты</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">Контакты</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Контакты</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 700;">+7 (495) 156-35-50</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">info@language2go.ru</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">support@language2go.ru</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #fff !important; font-weight: 300;">101000, Москва, Россия</a></li>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 3, // Количество отображаемых элементов
+            margin: 10, // Отступ между элемента
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1 // Для мобильных устройств
+                },
+                600: {
+                    items: 3 // Для планшетов
+                },
+                1000: {
+                    items: 3 // Для десктопов
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
